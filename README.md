@@ -1,2 +1,2 @@
 # EpicLanConnectSite
-API for the Epic Lan Connect application
+Website for Epic Lan Connect
