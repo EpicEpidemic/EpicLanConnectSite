@@ -1,1 +1,10 @@
+sudo: true
 language: node_js
+node_js:
+- '5.7'
+cache:
+  yarn: true
+  directories:
+    - node_modules
+before_deploy:
+  - yarn build
