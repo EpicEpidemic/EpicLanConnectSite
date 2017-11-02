@@ -1,10 +1,13 @@
 sudo: true
 language: node_js
 node_js:
-- '6.11.2'
+- 6.11.2
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
 before_deploy:
-  - yarn build
+- yarn build
+notifications:
+  slack:
+    secure: QNCAyED0VzSjw/QrFCrwWMWlfV48ZX9OSrCS/akdQYAhKNR9XCGg0VefB4qq+Thv+43HDquBIzP404LLN2zo4rhZCNUWl33szfDV0Zy6Vw4seX1dm4ljkV0Ayvbf05ApcJqcPm5yoBp+pfZHEm1psadmqZWA4eeIgD7sVVz+ob7YO0g1tXLcBqJHmbALCZHjDKNklPuxflDxJAU5fUfg+eH5jXc5qQEZgtzpoB8EdShCiEswCmnCyb5cmZwVxfLlwiPQ1PiKUWUzLEsqaOjWYLvYE9YYBNkzATDTinTmkcPk3x7aEiYKWjWlgJC+Z37iK/aXQMzWvFHnPHq1npB07vcrw/glONK86Iwion0O7SwBWfgbFvpVZIr+0EYhwAUuKy0c5sN2X8ThI3ZavVQ7SD6WyCV5ELGTLl7m8CV65t4GjinwjdMWdVEYodHoBc6v7KfdQV9j3YJxmGvZx8Lvy6pfjcvPVAAxm1qksOCwDBuQADJ0kDmEVqP/EygH3+XqbJ7FddixFvxorV5JJB2dwnJnQl7OMLnqDFNHCtE1aw09Vke7m9l99rxxUc70bD4gsP9jzfQr0d34VQXajjuvfaLw3diUdfjLfvYsvKTPtVgJ5A174FyMh6Qr+r7R0mM3iPASPfU7d8YZg7m1gBT9zoM7U+d77AIrzwnuQv12o9E=
